@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.joaogabriel.jfiscal.view.JanelaCadastroEmitente">
+    <Pane prefHeight="200.0" prefWidth="200.0">
+        <Label layoutX="9.0" layoutY="18.0" text="Informe o CNPJ" />
+        <TextField fx:id="tf_cpfCnpjBusca" layoutX="101.0" layoutY="14.0" onKeyTyped="#aplicarMascaraCNPJ" prefHeight="25.0" prefWidth="350.0" promptText="CNPJ" />
+        <Button fx:id="bt_buscar" layoutX="461.0" layoutY="14.0" mnemonicParsing="false" onAction="#buscarInformacoesReceitaWS" text="Buscar Dados na ReceitaWS" />
+        <Separator layoutX="637.0" orientation="VERTICAL" prefHeight="720.0" />
+        <Separator layoutY="49.0" prefWidth="1280.0" />
+        <Pane layoutX="14.0" layoutY="60.0" prefHeight="640.0" prefWidth="610.0">
+            <TextField fx:id="tf_codigo" disable="true" editable="false" layoutX="7.0" layoutY="18.0" prefHeight="25.0" prefWidth="100.0" promptText="Código" text="0" />
+            <TextField fx:id="tf_cpfCnpj" layoutX="127.0" layoutY="18.0" onKeyTyped="#aplicarMascaraCNPJ" prefHeight="25.0" prefWidth="250.0" promptText="CPF / CNPJ" />
+            <TextField fx:id="tf_ie" layoutX="399.0" layoutY="18.0" prefHeight="25.0" prefWidth="200.0" promptText="I.E" />
+            <TextField fx:id="tf_razaoSocial" layoutX="5.0" layoutY="90.0" prefWidth="290.0" promptText="Razão Social" />
+            <TextField fx:id="tf_fantasia" layoutX="312.0" layoutY="90.0" prefWidth="290.0" promptText="Fantasia" />
+            <ComboBox fx:id="cb_tipo" layoutX="5.0" layoutY="145.0" prefHeight="25.0" prefWidth="100.0" promptText="PF ou PJ" visibleRowCount="5" />
+            <TextField fx:id="tf_site" layoutX="127.0" layoutY="145.0" prefHeight="25.0" prefWidth="250.0" promptText="Site" />
+            <TextField fx:id="tf_contato" layoutX="401.0" layoutY="145.0" prefHeight="25.0" prefWidth="200.0" promptText="Contato" />
+            <TextArea fx:id="ta_observacoes" layoutX="5.0" layoutY="205.0" prefHeight="60.0" prefWidth="600.0" promptText="Observações" />
+            <TextField fx:id="tf_rua" layoutX="7.0" layoutY="326.0" prefHeight="25.0" prefWidth="435.0" promptText="Nome da Rua" />
+            <TextField fx:id="tf_numero" layoutX="454.0" layoutY="326.0" prefHeight="25.0" prefWidth="146.0" promptText="Nº" />
+            <TextField fx:id="tf_bairro" layoutX="7.0" layoutY="379.0" prefHeight="25.0" prefWidth="200.0" promptText="Bairro" />
+            <ComboBox fx:id="cb_cidade" editable="true" layoutX="230.0" layoutY="379.0" prefHeight="25.0" prefWidth="200.0" promptText="Cidade" />
+            <ComboBox fx:id="cb_estado" editable="true" layoutX="452.0" layoutY="379.0" prefWidth="150.0" promptText="UF" />
+            <ComboBox fx:id="cb_pais" editable="true" layoutX="7.0" layoutY="434.0" prefHeight="25.0" prefWidth="200.0" promptText="País" />
+            <TextField fx:id="tf_cep" layoutX="230.0" layoutY="434.0" onKeyTyped="#aplicarMascaraCEP" prefHeight="25.0" prefWidth="200.0" promptText="CEP" />
+            <TextField fx:id="tf_codigoMunicipal" layoutX="452.0" layoutY="433.0" promptText="Código Municipal" />
+            <TextArea fx:id="ta_observacoesEndereco" layoutX="5.0" layoutY="495.0" prefHeight="60.0" prefWidth="600.0" promptText="Observações" />
+            <Label layoutX="12.0" layoutY="-2.0" text="Código" />
+            <Label layoutX="137.0" layoutY="-2.0" text="CPF / CNPJ" />
+            <Label layoutX="407.0" layoutY="-2.0" text="Inscrição Estadual (Opcional p/ PF)" />
+            <Label layoutX="15.0" layoutY="70.0" text="Razão Social" />
+            <Label layoutX="325.0" layoutY="70.0" text="Fantasia" />
+            <Label layoutX="15.0" layoutY="125.0" text="Tipo" />
+            <Label layoutX="136.0" layoutY="125.0" text="Site (Opcional)" />
+            <Label layoutX="407.0" layoutY="125.0" text="Contato (Opcional)" />
+            <Label layoutX="13.0" layoutY="306.0" text="Logradouro" />
+            <Label layoutX="459.0" layoutY="307.0" text="Número" />
+            <Label layoutX="15.0" layoutY="359.0" text="Bairro" />
+            <Label layoutX="240.0" layoutY="359.0" text="Cidade" />
+            <Label layoutX="460.0" layoutY="359.0" text="Estado" />
+            <Label layoutX="13.0" layoutY="412.0" text="País" />
+            <Label layoutX="238.0" layoutY="412.0" text="CEP" />
+            <Label layoutX="462.0" layoutY="412.0" text="Código Municipal" />
+            <Label layoutX="10.0" layoutY="475.0" text="Observações" />
+            <Label layoutX="10.0" layoutY="185.0" text="Observações" />
+            <Button fx:id="bt_salvar" layoutX="544.0" layoutY="589.0" mnemonicParsing="false" onAction="#cadastrarEmitente" text="Salvar" />
+            <Separator layoutX="1.0" layoutY="566.0" prefWidth="610.0" />
+            <Separator layoutY="60.0" prefHeight="3.0" prefWidth="610.0" />
+            <Separator layoutX="1.0" layoutY="294.0" prefHeight="3.0" prefWidth="610.0" />
+        </Pane>
+        <Label fx:id="lb_mensagem" layoutX="656.0" layoutY="18.0" text="Pronto." />
+        <ImageView fx:id="img_loading" fitHeight="32.0" fitWidth="32.0" layoutX="1234.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@assets/loading.gif" />
+        </ImageView>
+    </Pane>
+</StackPane>
