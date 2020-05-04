@@ -21,4 +21,8 @@ public class JanelaBase {
     public void abrirJanelaCadastroCliente(ActionEvent actionEvent) {
         SceneNavigator.loadJanela(SceneNavigator.CADASTRO_CLIENTE);
     }
+
+    public void abrirJanelaNFE(ActionEvent actionEvent) {
+        SceneNavigator.loadJanela(SceneNavigator.NOTAS_FISCAIS_PROPRIAS);
+    }
 }

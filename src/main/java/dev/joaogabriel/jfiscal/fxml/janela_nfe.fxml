@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.joaogabriel.jfiscal.view.JanelaNFE">
+   <Pane>
+      <Label layoutX="5.0" layoutY="3.0" text="Dados da Emissão" />
+      <Label layoutX="15.0" layoutY="30.0" text="Emitente" />
+      <Label layoutX="15.0" layoutY="60.0" text="Número" />
+      <Label layoutX="15.0" layoutY="90.0" text="Operação" />
+      <Label layoutX="15.0" layoutY="120.0" text="Forma Pgto." />
+      <Label layoutX="15.0" layoutY="150.0" text="Data E/S" />
+      <Label layoutX="15.0" layoutY="180.0" text="Destinatário" />
+      <Label layoutX="15.0" layoutY="210.0" text="CFOP" />
+      <ComboBox layoutX="93.0" layoutY="26.0" prefHeight="25.0" prefWidth="528.0" />
+      <TextField layoutX="94.0" layoutY="56.0" prefWidth="210.0" />
+      <ComboBox layoutX="93.0" layoutY="86.0" prefWidth="210.0" />
+      <ComboBox layoutX="93.0" layoutY="116.0" prefWidth="210.0" />
+      <TextField layoutX="94.0" layoutY="146.0" prefWidth="210.0" />
+      <ComboBox editable="true" layoutX="94.0" layoutY="176.0" prefHeight="25.0" prefWidth="528.0" />
+      <TextField layoutX="95.0" layoutY="206.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField layoutX="163.0" layoutY="206.0" prefHeight="25.0" prefWidth="460.0" />
+      <Label layoutX="335.0" layoutY="150.0" text="Hora E/S" />
+      <TextField layoutX="410.0" layoutY="146.0" prefWidth="210.0" />
+      <Label layoutX="325.0" layoutY="120.0" text="Data Emissão" />
+      <TextField layoutX="411.0" layoutY="116.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label layoutX="333.0" layoutY="90.0" text="Finalidade" />
+      <ComboBox layoutX="411.0" layoutY="86.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label layoutX="345.0" layoutY="60.0" text="Série" />
+      <TextField layoutX="411.0" layoutY="56.0" prefHeight="25.0" prefWidth="210.0" />
+      <Separator layoutX="640.0" orientation="VERTICAL" prefHeight="720.0" />
+      <Separator layoutX="115.0" layoutY="12.0" prefWidth="526.0" />
+      <Label layoutX="5.0" layoutY="240.0" text="Dados do Transporte" />
+      <Separator layoutX="125.0" layoutY="249.0" prefHeight="3.0" prefWidth="516.0" />
+      <Label layoutX="15.0" layoutY="265.0" text="Nome" />
+      <Label layoutX="15.0" layoutY="295.0" text="Endereço" />
+      <Label layoutX="15.0" layoutY="325.0" text="Placa" />
+      <Label layoutX="15.0" layoutY="355.0" text="Espécie" />
+      <ComboBox editable="true" layoutX="67.0" layoutY="261.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField layoutX="67.0" layoutY="292.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField layoutX="67.0" layoutY="323.0" prefHeight="25.0" prefWidth="96.0" />
+      <Label layoutX="189.0" layoutY="325.0" text="UF Placa" />
+      <TextField layoutX="240.0" layoutY="323.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField layoutX="67.0" layoutY="353.0" />
+      <Label layoutX="219.0" layoutY="357.0" text="Qtd. Vol." />
+      <TextField layoutX="273.0" layoutY="353.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="342.0" layoutY="265.0" text="CNPJ / CPF" />
+      <TextField layoutX="406.0" layoutY="261.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="363.0" layoutY="295.0" text="I.E." />
+      <TextField layoutX="406.0" layoutY="292.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="352.0" layoutY="327.0" text="Cidade" />
+      <TextField layoutX="406.0" layoutY="323.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="573.0" layoutY="327.0" text="UF" />
+      <TextField layoutX="592.0" layoutY="323.0" prefHeight="25.0" prefWidth="30.0" />
+      <Label layoutX="356.0" layoutY="357.0" text="ANTT" />
+      <TextField layoutX="406.0" layoutY="353.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="15.0" layoutY="388.0" text="Frete" />
+      <ComboBox editable="true" layoutX="67.0" layoutY="385.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="274.0" layoutY="388.0" text="Peso Bruto" />
+      <TextField layoutX="337.0" layoutY="385.0" prefHeight="25.0" prefWidth="100.0" />
+      <TextField layoutX="522.0" layoutY="385.0" prefWidth="100.0" />
+      <Label layoutX="448.0" layoutY="388.0" text="Peso Liquido" />
+      <Label layoutX="5.0" layoutY="415.0" text="Informações Complementares" />
+      <Separator layoutX="170.0" layoutY="425.0" prefHeight="3.0" prefWidth="471.0" />
+      <TextArea layoutX="17.0" layoutY="435.0" prefHeight="80.0" prefWidth="605.0" />
+      <Label layoutX="5.0" layoutY="515.0" text="Totais" />
+      <Separator layoutX="41.0" layoutY="524.0" prefHeight="3.0" prefWidth="600.0" />
+      <Label layoutX="14.0" layoutY="534.0" text="Base de Cálculo" />
+      <Label layoutX="14.0" layoutY="559.0" text="Imposto Imp." />
+      <Label layoutX="14.0" layoutY="585.0" text="Seguro" />
+      <Label layoutX="175.0" layoutY="534.0" text="Valor ICMS" />
+      <Label layoutX="176.0" layoutY="560.0" text="IPI" />
+      <Label layoutX="176.0" layoutY="585.0" text="Descontos" />
+      <Label layoutX="317.0" layoutY="534.0" text="Total Itens" />
+      <Label layoutX="317.0" layoutY="560.0" text="PIS" />
+      <Label layoutX="317.0" layoutY="585.0" text="Desp. Acessórias" />
+      <Label layoutX="482.0" layoutY="534.0" text="Frete" />
+      <Label layoutX="481.0" layoutY="560.0" text="COFINS" />
+      <Label layoutX="481.0" layoutY="585.0" text="Total NF-e" />
+      <TextField layoutX="102.0" layoutY="530.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="102.0" layoutY="556.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="102.0" layoutY="582.0" prefWidth="70.0" />
+      <TextField layoutX="240.0" layoutY="530.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="240.0" layoutY="556.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="240.0" layoutY="582.0" prefWidth="70.0" />
+      <TextField layoutX="408.0" layoutY="530.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="408.0" layoutY="556.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="408.0" layoutY="582.0" prefWidth="70.0" />
+      <TextField layoutX="540.0" layoutY="530.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField layoutX="540.0" layoutY="556.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField layoutX="540.0" layoutY="582.0" prefHeight="25.0" prefWidth="83.0" />
+      <Label layoutX="5.0" layoutY="620.0" text="Chave NF-e" />
+      <TextField layoutX="78.0" layoutY="617.0" prefHeight="25.0" prefWidth="545.0" />
+      <Label layoutX="6.0" layoutY="643.0" text="Recibo Entrega" />
+      <TextField layoutX="6.0" layoutY="660.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="130.0" layoutY="643.0" text="Protocolo" />
+      <TextField layoutX="130.0" layoutY="660.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="254.0" layoutY="643.0" text="Cancelamento" />
+      <TextField layoutX="254.0" layoutY="660.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="378.0" layoutY="643.0" text="Data Cancel." />
+      <TextField layoutX="378.0" layoutY="660.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="501.0" layoutY="643.0" text="Inutilização" />
+      <TextField layoutX="501.0" layoutY="660.0" prefHeight="25.0" prefWidth="120.0" />
+      <Separator layoutX="1.0" layoutY="611.0" prefHeight="3.0" prefWidth="640.0" />
+   </Pane>
+</StackPane>

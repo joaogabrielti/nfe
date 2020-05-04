@@ -9,6 +9,7 @@ public class SceneNavigator {
     public static final String PRINCIPAL = "fxml/janela_principal.fxml";
     public static final String CADASTRO_EMITENTE = "fxml/janela_cadastro_emitente.fxml";
     public static final String CADASTRO_CLIENTE = "fxml/janela_cadastro_cliente.fxml";
+    public static final String NOTAS_FISCAIS_PROPRIAS = "fxml/janela_nfe.fxml";
 
     private static JanelaBase controller;
 

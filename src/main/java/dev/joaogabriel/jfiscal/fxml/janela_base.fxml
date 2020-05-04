@@ -17,10 +17,10 @@
             <Menu text="Cadastros">
                 <MenuItem mnemonicParsing="false" text="Emitentes" onAction="#abrirJanelaCadastroEmitente" />
                 <MenuItem mnemonicParsing="false" text="Clientes" onAction="#abrirJanelaCadastroCliente" />
-                <MenuItem mnemonicParsing="false" text="Mercadorias" />
+                <MenuItem mnemonicParsing="false" text="Produtos" />
             </Menu>
-            <Menu text="Faturamento">
-                <MenuItem mnemonicParsing="false" text="Faturas" />
+            <Menu text="Movimentos">
+                <MenuItem mnemonicParsing="false" text="Notas Fiscais Próprias" onAction="#abrirJanelaNFE" />
             </Menu>
         </MenuBar>
     </top>
