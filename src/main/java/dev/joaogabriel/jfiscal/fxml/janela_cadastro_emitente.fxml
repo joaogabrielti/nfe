@@ -18,40 +18,34 @@
             <TextField fx:id="tf_razaoSocial" layoutX="5.0" layoutY="90.0" prefWidth="290.0" promptText="Razão Social" />
             <TextField fx:id="tf_fantasia" layoutX="312.0" layoutY="90.0" prefWidth="290.0" promptText="Fantasia" />
             <ComboBox fx:id="cb_tipo" layoutX="5.0" layoutY="145.0" prefHeight="25.0" prefWidth="100.0" promptText="PF ou PJ" visibleRowCount="5" />
-            <TextField fx:id="tf_site" layoutX="127.0" layoutY="145.0" prefHeight="25.0" prefWidth="250.0" promptText="Site" />
-            <TextField fx:id="tf_contato" layoutX="401.0" layoutY="145.0" prefHeight="25.0" prefWidth="200.0" promptText="Contato" />
-            <TextArea fx:id="ta_observacoes" layoutX="5.0" layoutY="205.0" prefHeight="60.0" prefWidth="600.0" promptText="Observações" />
-            <TextField fx:id="tf_rua" layoutX="7.0" layoutY="326.0" prefHeight="25.0" prefWidth="435.0" promptText="Nome da Rua" />
-            <TextField fx:id="tf_numero" layoutX="454.0" layoutY="326.0" prefHeight="25.0" prefWidth="146.0" promptText="Nº" />
-            <TextField fx:id="tf_bairro" layoutX="7.0" layoutY="379.0" prefHeight="25.0" prefWidth="200.0" promptText="Bairro" />
-            <ComboBox fx:id="cb_cidade" editable="true" layoutX="230.0" layoutY="379.0" prefHeight="25.0" prefWidth="200.0" promptText="Cidade" />
-            <ComboBox fx:id="cb_estado" editable="true" layoutX="452.0" layoutY="379.0" prefWidth="150.0" promptText="UF" />
-            <ComboBox fx:id="cb_pais" editable="true" layoutX="7.0" layoutY="434.0" prefHeight="25.0" prefWidth="200.0" promptText="País" />
-            <TextField fx:id="tf_cep" layoutX="230.0" layoutY="434.0" onKeyTyped="#aplicarMascaraCEP" prefHeight="25.0" prefWidth="200.0" promptText="CEP" />
-            <TextField fx:id="tf_codigoMunicipal" layoutX="452.0" layoutY="433.0" promptText="Código Municipal" />
-            <TextArea fx:id="ta_observacoesEndereco" layoutX="5.0" layoutY="495.0" prefHeight="60.0" prefWidth="600.0" promptText="Observações" />
+            <TextArea fx:id="ta_observacoes" layoutX="115.0" layoutY="145.0" prefHeight="60.0" prefWidth="490.0" promptText="Observações" />
+            <TextField fx:id="tf_rua" layoutX="7.0" layoutY="250.0" prefHeight="25.0" prefWidth="435.0" promptText="Nome da Rua" />
+            <TextField fx:id="tf_numero" layoutX="454.0" layoutY="250.0" prefHeight="25.0" prefWidth="146.0" promptText="Nº" />
+            <TextField fx:id="tf_bairro" layoutX="7.0" layoutY="303.0" prefHeight="25.0" prefWidth="200.0" promptText="Bairro" />
+            <ComboBox fx:id="cb_cidade" editable="true" layoutX="230.0" layoutY="303.0" prefHeight="25.0" prefWidth="200.0" promptText="Cidade" />
+            <ComboBox fx:id="cb_estado" editable="true" layoutX="452.0" layoutY="303.0" prefWidth="150.0" promptText="UF" />
+            <ComboBox fx:id="cb_pais" editable="true" layoutX="7.0" layoutY="358.0" prefHeight="25.0" prefWidth="200.0" promptText="País" />
+            <TextField fx:id="tf_cep" layoutX="230.0" layoutY="358.0" onKeyTyped="#aplicarMascaraCEP" prefHeight="25.0" prefWidth="200.0" promptText="CEP" />
+            <TextField fx:id="tf_codigoMunicipal" layoutX="452.0" layoutY="357.0" promptText="Código Municipal" />
             <Label layoutX="12.0" layoutY="-2.0" text="Código" />
             <Label layoutX="137.0" layoutY="-2.0" text="CPF / CNPJ" />
             <Label layoutX="407.0" layoutY="-2.0" text="Inscrição Estadual (Opcional p/ PF)" />
             <Label layoutX="15.0" layoutY="70.0" text="Razão Social" />
             <Label layoutX="325.0" layoutY="70.0" text="Fantasia" />
             <Label layoutX="15.0" layoutY="125.0" text="Tipo" />
-            <Label layoutX="136.0" layoutY="125.0" text="Site (Opcional)" />
-            <Label layoutX="407.0" layoutY="125.0" text="Contato (Opcional)" />
-            <Label layoutX="13.0" layoutY="306.0" text="Logradouro" />
-            <Label layoutX="459.0" layoutY="307.0" text="Número" />
-            <Label layoutX="15.0" layoutY="359.0" text="Bairro" />
-            <Label layoutX="240.0" layoutY="359.0" text="Cidade" />
-            <Label layoutX="460.0" layoutY="359.0" text="Estado" />
-            <Label layoutX="13.0" layoutY="412.0" text="País" />
-            <Label layoutX="238.0" layoutY="412.0" text="CEP" />
-            <Label layoutX="462.0" layoutY="412.0" text="Código Municipal" />
-            <Label layoutX="10.0" layoutY="475.0" text="Observações" />
-            <Label layoutX="10.0" layoutY="185.0" text="Observações" />
-            <Button fx:id="bt_salvar" layoutX="544.0" layoutY="589.0" mnemonicParsing="false" onAction="#cadastrarEmitente" text="Salvar" />
-            <Separator layoutX="1.0" layoutY="566.0" prefWidth="610.0" />
+            <Label layoutX="13.0" layoutY="230.0" text="Logradouro" />
+            <Label layoutX="459.0" layoutY="231.0" text="Número" />
+            <Label layoutX="15.0" layoutY="283.0" text="Bairro" />
+            <Label layoutX="240.0" layoutY="283.0" text="Cidade" />
+            <Label layoutX="460.0" layoutY="283.0" text="Estado" />
+            <Label layoutX="13.0" layoutY="336.0" text="País" />
+            <Label layoutX="238.0" layoutY="336.0" text="CEP" />
+            <Label layoutX="462.0" layoutY="336.0" text="Código Municipal" />
+            <Label layoutX="126.0" layoutY="125.0" text="Observações" />
+            <Button fx:id="bt_salvar" layoutX="499.0" layoutY="407.0" mnemonicParsing="false" onAction="#cadastrarEmitente" prefWidth="100.0" text="Salvar" />
+            <Separator layoutX="1.0" layoutY="394.0" prefWidth="610.0" />
             <Separator layoutY="60.0" prefHeight="3.0" prefWidth="610.0" />
-            <Separator layoutX="1.0" layoutY="294.0" prefHeight="3.0" prefWidth="610.0" />
+            <Separator layoutX="1.0" layoutY="218.0" prefHeight="3.0" prefWidth="610.0" />
         </Pane>
         <Label fx:id="lb_mensagem" layoutX="656.0" layoutY="18.0" text="Pronto." />
         <ImageView fx:id="img_loading" fitHeight="32.0" fitWidth="32.0" layoutX="1234.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">

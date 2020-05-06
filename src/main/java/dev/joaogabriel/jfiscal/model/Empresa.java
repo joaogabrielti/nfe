@@ -7,42 +7,57 @@ public class Empresa {
     private String razao_social;
     private String inscricao_estadual;
     private boolean tipo; // false = Pessoa Física, true = Pessoa Jurídica
-    private Endereco endereco;
-    private String site;
-    private String contato;
+    private String rua;
+    private String numero;
+    private String bairro;
+    private String cidade;
+    private String estado;
+    private String pais;
+    private String cep;
+    private String codigo_municipio;
     private String observacoes;
 
-    public Empresa(int id, String cnpj_cpf, String fantasia, String razao_social, String inscricao_estadual, boolean tipo, Endereco endereco, String site, String contato, String observacoes) {
+    public Empresa(int id, String cnpj_cpf, String fantasia, String razao_social, String inscricao_estadual, boolean tipo, String rua, String numero, String bairro, String cidade, String estado, String pais, String cep, String codigo_municipio, String observacoes) {
         this.id = id;
         this.cnpj_cpf = cnpj_cpf;
         this.fantasia = fantasia;
         this.razao_social = razao_social;
         this.inscricao_estadual = inscricao_estadual;
         this.tipo = tipo;
-        this.endereco = endereco;
-        this.site = site;
-        this.contato = contato;
+        this.rua = rua;
+        this.numero = numero;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.pais = pais;
+        this.cep = cep;
+        this.codigo_municipio = codigo_municipio;
         this.observacoes = observacoes;
     }
 
-    public Empresa(String cnpj_cpf, String fantasia, String razao_social, String inscricao_estadual, boolean tipo, Endereco endereco, String site, String contato, String observacoes) {
+    public Empresa(String cnpj_cpf, String fantasia, String razao_social, String inscricao_estadual, boolean tipo, String rua, String numero, String bairro, String cidade, String estado, String pais, String cep, String codigo_municipio, String observacoes) {
         this.cnpj_cpf = cnpj_cpf;
         this.fantasia = fantasia;
         this.razao_social = razao_social;
         this.inscricao_estadual = inscricao_estadual;
         this.tipo = tipo;
-        this.endereco = endereco;
-        this.site = site;
-        this.contato = contato;
+        this.rua = rua;
+        this.numero = numero;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.pais = pais;
+        this.cep = cep;
+        this.codigo_municipio = codigo_municipio;
         this.observacoes = observacoes;
     }
 
-    public int getCodigo() {
+    public int getId() {
         return id;
     }
 
-    public void setCodigo(int codigo) {
-        this.id = codigo;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCnpj_cpf() {
@@ -85,28 +100,68 @@ public class Empresa {
         this.tipo = tipo;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public String getRua() {
+        return rua;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void setRua(String rua) {
+        this.rua = rua;
     }
 
-    public String getSite() {
-        return site;
+    public String getNumero() {
+        return numero;
     }
 
-    public void setSite(String site) {
-        this.site = site;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 
-    public String getContato() {
-        return contato;
+    public String getBairro() {
+        return bairro;
     }
 
-    public void setContato(String contato) {
-        this.contato = contato;
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getCodigo_municipio() {
+        return codigo_municipio;
+    }
+
+    public void setCodigo_municipio(String codigo_municipio) {
+        this.codigo_municipio = codigo_municipio;
     }
 
     public String getObservacoes() {
@@ -119,6 +174,6 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return this.fantasia;
+        return this.cnpj_cpf + " - " + this.fantasia;
     }
 }

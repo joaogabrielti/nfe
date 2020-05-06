@@ -15,8 +15,8 @@ import java.time.format.DateTimeFormatter;
 public class ExceptionDialog {
     public static void showExceptionDialog(Exception e) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle("SGTA Exception Dialog");
-        alert.setHeaderText("Ocorreu um erro fatal durante a execução, por favor, entre em contato com um técnico.");
+        alert.setTitle("JFiscal Exception Dialog");
+        alert.setHeaderText("Um erro inesperado ocorreu, e aqui está os detalhes dele.");
         alert.setContentText(e.getMessage());
 
         StringWriter sw = new StringWriter();
